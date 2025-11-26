@@ -27,5 +27,6 @@ const sceneUrl = 'https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode'
 .size-full {
   width: 100%;
   height: calc(100vh - 6rem);
+  font-family: aliFont;
 }
 </style>

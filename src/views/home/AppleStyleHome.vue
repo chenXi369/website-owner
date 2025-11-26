@@ -25,14 +25,14 @@
           <h1 class="main-title">辰のblog</h1>
           <div class="cta-buttons">
             <button
-              class="cta-button inline-flex items-center justify-center whitespace-nowrap rounded-full border border-border bg-transparent px-6 py-3 text-base font-medium text-white transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              class="cta-button inline-flex items-center justify-center whitespace-nowrap rounded-full border border-border bg-transparent px-6 py-10 text-base font-medium text-white transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               @click="scrollToFeatures"
             >
               探索更多
             </button>
             <RouterLink
               to="/articles"
-              class="cta-button inline-flex items-center justify-center whitespace-nowrap rounded-full border border-border bg-transparent px-6 py-3 text-base font-medium text-white transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              class="cta-button inline-flex items-center justify-center whitespace-nowrap rounded-full border border-border bg-transparent px-6 py-10 text-base font-medium text-white transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
               查看文章
             </RouterLink>
@@ -322,7 +322,7 @@ const initScrollAnimations = () => {
   border-radius: 30px;
   font-weight: 500;
   text-transform: none;
-  padding: 0 2rem;
+  padding: 0.6rem 2rem;
 }
 
 .features-section,

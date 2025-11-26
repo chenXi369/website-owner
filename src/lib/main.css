@@ -99,8 +99,16 @@
   }
 }
 
+@font-face {
+  font-family: 'aliFont'; /* 给你的字体起个名字 */
+  src: url('./font/AliShuHeiTi-Bold.woff2') format('woff2');
+  font-weight: normal; /* 定义字重 */
+  font-style: normal; /* 定义字体样式 */
+}
+
 html {
   color-scheme: light dark;
+  font-family: aliFont;
 }
 html.dark {
   color-scheme: dark;

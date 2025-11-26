@@ -275,6 +275,7 @@ onMounted(() => {
   min-height: 100vh;
   background: var(--background);
   color: var(--foreground);
+  font-family: aliFont;
 }
 
 .articles-navbar {
@@ -416,7 +417,7 @@ onMounted(() => {
     background: var(--muted);
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
-    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-family: aliFont;
     font-size: 0.875rem;
   }
 

@@ -11,34 +11,56 @@
     <!-- 联系弹窗 -->
     <div v-if="dialog" class="fixed inset-0 z-[2000] flex items-center justify-center">
       <div class="absolute inset-0 bg-black/50" @click="dialog = false" />
-      <div class="contact-dialog-card relative w-[90%] max-w-[500px] rounded-2xl bg-white/10 p-0 text-white backdrop-blur-lg">
+      <div
+        class="contact-dialog-card relative w-[90%] max-w-[500px] rounded-2xl bg-white/10 p-0 text-white backdrop-blur-lg"
+      >
         <div class="contact-dialog-title">
           <span>联系我</span>
-          <button class="close-button inline-flex h-9 w-9 items-center justify-center rounded-md hover:bg-white/10" @click="dialog = false">✕</button>
+          <button
+            class="close-button inline-flex h-9 w-9 items-center justify-center rounded-md hover:bg-white/10"
+            @click="dialog = false"
+          >
+            ✕
+          </button>
         </div>
 
         <div class="px-6 pb-6">
           <form @submit.prevent="submitForm">
             <div class="mb-4">
               <label class="mb-1 block text-sm opacity-90">姓名</label>
-              <input v-model="contactForm.name" type="text" required
-                class="block w-full rounded-md border border-border bg-transparent px-3 py-2 text-white placeholder:text-white/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring" />
+              <input
+                v-model="contactForm.name"
+                type="text"
+                required
+                class="block w-full rounded-md border border-border bg-transparent px-3 py-2 text-white placeholder:text-white/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              />
             </div>
 
             <div class="mb-4">
               <label class="mb-1 block text-sm opacity-90">邮箱</label>
-              <input v-model="contactForm.email" type="email" required
-                class="block w-full rounded-md border border-border bg-transparent px-3 py-2 text-white placeholder:text-white/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring" />
+              <input
+                v-model="contactForm.email"
+                type="email"
+                required
+                class="block w-full rounded-md border border-border bg-transparent px-3 py-2 text-white placeholder:text-white/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              />
             </div>
 
             <div class="mb-6">
               <label class="mb-1 block text-sm opacity-90">留言</label>
-              <textarea v-model="contactForm.message" rows="4" required
-                class="block w-full rounded-md border border-border bg-transparent px-3 py-2 text-white placeholder:text-white/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring" />
+              <textarea
+                v-model="contactForm.message"
+                rows="4"
+                required
+                class="block w-full rounded-md border border-border bg-transparent px-3 py-2 text-white placeholder:text-white/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              />
             </div>
 
-            <button type="submit" :disabled="sending"
-              class="inline-flex w-full items-center justify-center whitespace-nowrap rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 disabled:pointer-events-none disabled:opacity-50">
+            <button
+              type="submit"
+              :disabled="sending"
+              class="inline-flex w-full items-center justify-center whitespace-nowrap rounded-md bg-primary px-4 py-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 disabled:pointer-events-none disabled:opacity-50"
+            >
               {{ sending ? '发送中...' : '发送消息' }}
             </button>
           </form>
@@ -58,7 +80,7 @@ const sending = ref(false)
 const contactForm = reactive({
   name: '',
   email: '',
-  message: ''
+  message: '',
 })
 
 function validate() {
@@ -87,7 +109,7 @@ const submitForm = async () => {
   border-radius: 30px;
   font-weight: 500;
   text-transform: none;
-  padding: 0 2rem;
+  padding: 0.6rem 2rem;
 }
 
 .contact-dialog-card {

@@ -291,6 +291,7 @@ onMounted(() => {
   min-height: 100vh;
   background: var(--background);
   color: var(--foreground);
+  font-family: aliFont;
 }
 
 .articles-navbar {
